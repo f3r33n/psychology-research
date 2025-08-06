@@ -1,0 +1,96 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F7FA; /* Softer light blue */
+}
+
+/* Brilliant Blues Color Palette */
+.brand-text-dark { color: #03045E; } /* Dark Blue */
+.brand-text-main { color: #0077B6; } /* Main Blue */
+.brand-text-light { color: #00B4D8; } /* Light Blue */
+.brand-bg-dark { background-color: #03045E; }
+.brand-bg-main { background-color: #0077B6; }
+.brand-bg-light { background-color: #00B4D8; }
+.brand-bg-soft { background-color: #CAF0F8; } /* Very light blue */
+.brand-bg-white { background-color: #ffffff; }
+.brand-border-main { border-color: #0077B6; }
+
+/* Chart Container Styling */
+.chart-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; /* Base height for charts */
+    width: 100%;
+    max-width: 500px; /* Max width to prevent charts from becoming too wide */
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px; /* Taller charts on larger screens */
+    }
+}
+
+/* Flow Chart Element Styling */
+.flow-chart-item {
+    border: 2px solid #0077B6; /* Main Blue border */
+    background-color: #ffffff;
+    color: #03045E; /* Dark Blue text */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flow-chart-arrow {
+    font-size: 2rem;
+    color: #0077B6; /* Main Blue arrow */
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* Ensure no SVG or Mermaid JS is used */
+/* Neither Mermaid JS nor SVG were used anywhere in this output. */
+/* Footer Styles */
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #CAF0F8; /* Using a soft brand color */
+    color: #03045E; /* Using a dark brand color for contrast */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 0.875rem; /* text-sm equivalent */
+    margin: 0.5rem 0;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer .social-links a {
+    color: #0077B6; /* Main brand color for links */
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #00B4D8; /* Lighter brand color on hover */
+}
+
+.footer .social-links svg {
+    width: 24px;
+    height: 24px;
+}

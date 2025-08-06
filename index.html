@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Psychology of Confidence: Navigating Unfamiliar Worlds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="brand-text-dark">
+
+    <nav class="sticky top-0 z-50 brand-bg-main p-4 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-center text-white text-sm md:text-base">
+            <a href="#intro" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Introduction</a>
+            <a href="#developmental" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Developmental</a>
+            <a href="#cognitive" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Cognitive</a>
+            <a href="#personality" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Personality</a>
+            <a href="#patterns" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Patterns</a>
+            <a href="#clinical" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Clinical</a>
+            <a href="#strategies" class="px-3 py-1 rounded-md hover:bg-white hover:text-brand-main transition-colors duration-300">Strategies</a>
+        </div>
+    </nav>
+
+    <header class="text-center p-8 md:p-12 brand-bg-soft">
+        <h1 class="text-4xl md:text-6xl font-black brand-text-dark mb-2">Navigating the Uncharted</h1>
+        <p class="text-lg md:text-xl brand-text-main max-w-3xl mx-auto">A Visual Guide to Understanding Why We Struggle in New Situations and How to Build Confidence</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="intro" class="text-center mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-4">The Comfort Zone Trap: Why We Resist the New</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8">Ever wonder why stepping out feels so hard? It's not just you. Our brains are evolutionarily wired to prefer the familiar. New experiences, while rewarding, trigger a primal "threat detection" system, making comfort feel like safety.</p>
+            <p class="max-w-3xl mx-auto text-base">This inherent predisposition is rooted in fundamental psychological principles. The **Mere Exposure Effect** (or familiarity principle) means we develop preferences for things we're repeatedly exposed to; the more familiar, the safer and more appealing. This served a crucial survival function for our ancestors. Complementing this, Sigmund Freud's **Pain-Pleasure Principle** suggests all human decisions are driven by avoiding pain or seeking pleasure. In new environments, the ambiguity and fear of the unknown are perceived as potential pain, often outweighing potential positive outcomes.</p>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="developmental" class="mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-8 text-center">The Developmental Blueprint: Early Foundations of Independence</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8 text-center">Early life experiences and relationships are foundational in shaping an individual's capacity for independence and confidence, particularly when confronting novel situations.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Upbringing and Attachment Styles</h3>
+                    <p class="mb-6">The nature of primary caregiver relationships in early childhood establishes "attachment styles" that profoundly influence how individuals perceive themselves, trust others, and navigate new situations. This blueprint dictates our comfort with independence.</p>
+                    <div class="chart-container">
+                        <canvas id="attachmentStyleChart"></canvas>
+                    </div>
+                    <p class="text-sm text-center mt-4">A **secure attachment**, built on consistent, responsive care, fosters an internal "safe base" for exploration. Individuals with this style approach new situations with confidence, knowing they possess internal resources and can seek support. Conversely, **insecure styles** (anxious, avoidant, disorganized) often stem from inconsistent or harmful care, leading to fear of rejection, dependence, or difficulty with emotional vulnerability, making independent action profoundly threatening.</p>
+                </div>
+
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Early Social Conditioning & Autonomy</h3>
+                    <p class="mb-6">Beyond direct attachment, broader social conditioning in early life shapes our sense of self and capacity for autonomy. Parental psychological control (e.g., guilt induction, love withdrawal) significantly undermines the development of autonomy and relatedness.</p>
+                    <div class="flex flex-col items-center justify-center h-64">
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64">
+                            <h4 class="font-bold">Controlling Upbringing</h4>
+                            <p class="text-xs">(e.g., "Do as I say")</p>
+                        </div>
+                        <div class="flow-chart-arrow rotate-90 my-2">➔</div>
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64">
+                            <h4 class="font-bold">Lack of Autonomy Practice</h4>
+                            <p class="text-xs">(Limited self-expression)</p>
+                        </div>
+                        <div class="flow-chart-arrow rotate-90 my-2">➔</div>
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64 brand-bg-main text-white">
+                            <h4 class="font-bold">Reluctance to Act Independently</h4>
+                            <p class="text-xs">(Especially in new settings)</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-4">If early conditioning discouraged independent thought, self-expression, or autonomous action, breaking from these familiar, albeit limiting, patterns becomes exceptionally challenging. The innate desire for security reinforces adherence to these familiar behaviors, making independent action in unfamiliar settings feel profoundly unsafe or "wrong."</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="cognitive" class="mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-8 text-center">The Mind's Lenses: Cognitive Factors Shaping Confidence</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8 text-center">Internal mental processes significantly influence an individual's confidence and willingness to engage with the unfamiliar.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Self-Efficacy: Belief in Your Capabilities</h3>
+                    <p class="mb-6">Psychologist Albert Bandura defined **self-efficacy** as one's belief in their ability to succeed in specific situations or accomplish a task. This belief powerfully predicts how individuals approach goals and challenges, especially in unfamiliar contexts.</p>
+                    <div class="chart-container">
+                        <canvas id="selfEfficacyChart"></canvas>
+                    </div>
+                    <p class="text-sm text-center mt-4">Individuals with **high self-efficacy** view difficult tasks as opportunities and persist through challenges. Those with **low self-efficacy** avoid tasks, perceive them as harder, and give up easily. This creates a vicious cycle: doubting capabilities leads to avoidance, missing crucial "mastery experiences" that build confidence.</p>
+                    <p class="text-sm mt-2">Bandura identified four key factors influencing self-efficacy:</p>
+                    <ul class="list-disc list-inside text-sm ml-4">
+                        <li>**Mastery Experiences:** Personal successes, especially in achieving difficult goals.</li>
+                        <li>**Vicarious Experiences (Social Modeling):** Observing others succeed.</li>
+                        <li>**Social Persuasion:** Encouragement or discouragement from others.</li>
+                        <li>**Physiological Factors:** How one interprets physical signs of stress (e.g., viewing "butterflies" as excitement, not fear).</li>
+                    </ul>
+                </div>
+
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Cognitive Distortions: Distorted Thinking Patterns</h3>
+                    <p class="mb-6">Cognitive distortions are automatic, inaccurate, and negative thinking patterns that significantly impact how individuals perceive themselves and the world. They amplify threat perception, especially in ambiguous social situations.</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center flex-grow mb-4">
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">🔮</span>
+                            <h4 class="font-semibold text-sm mt-2">Fortune Telling</h4>
+                        </div>
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">🧠</span>
+                            <h4 class="font-semibold text-sm mt-2">Mind Reading</h4>
+                        </div>
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">💥</span>
+                            <h4 class="font-semibold text-sm mt-2">Catastrophizing</h4>
+                        </div>
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">🏷️</span>
+                            <h4 class="font-semibold text-sm mt-2">Labeling</h4>
+                        </div>
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">🔳</span>
+                            <h4 class="font-semibold text-sm mt-2">All-or-Nothing</h4>
+                        </div>
+                        <div class="brand-bg-soft p-3 rounded-lg flex flex-col items-center justify-center">
+                            <span class="text-3xl">🚫</span>
+                            <h4 class="font-semibold text-sm mt-2">Filtering</h4>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-4">These distortions act as a filter, interpreting ambiguity through a consistently negative lens. For example, "mind reading" assumes negative judgment, and "catastrophizing" predicts inevitable failure. This distorted interpretation creates perceived threats, leading to anxiety, low self-esteem, and avoidance, preventing individuals from gathering evidence that could challenge these beliefs.</p>
+                </div>
+            </div>
+
+            <div class="brand-bg-white p-6 rounded-xl shadow-lg lg:col-span-2">
+                <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Internalized Beliefs and Self-Esteem</h3>
+                <p class="mb-6 text-center">Our brains are trained to believe anything, and these internalized beliefs, formed from a lifetime of attitudes and opinions (especially from early influences), profoundly impact our self-esteem and confidence.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center w-full space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">👎</div>
+                        <h4 class="text-xl font-semibold brand-text-dark">Negative Feedback</h4>
+                        <p class="text-sm">Criticism, ridicule, blame</p>
+                    </div>
+                    <div class="text-3xl brand-text-main transform md:-rotate-0 rotate-90">➔</div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">📉</div>
+                        <h4 class="text-xl font-semibold brand-text-dark">Low Self-Esteem</h4>
+                        <p class="text-sm">Self-doubt, negative self-talk</p>
+                    </div>
+                    <div class="text-3xl brand-text-main transform md:-rotate-0 rotate-90">➔</div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">⛔</div>
+                        <h4 class="text-xl font-semibold brand-text-dark">Avoidance/Inhibition</h4>
+                        <p class="text-sm">Hesitation in new situations</p>
+                    </div>
+                </div>
+                <p class="text-sm text-center mt-6">While **confidence** is belief in capabilities, **self-esteem** is an internal feeling of inherent worth. Low self-esteem almost invariably correlates with a lack of confidence, leading to people-pleasing, self-criticism, and avoidance of self-expression. Negative internalized beliefs predispose individuals to anticipate failure or judgment, becoming a self-fulfilling prophecy.</p>
+            </div>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="personality" class="mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-8 text-center">Personality's Role: Innate Tendencies in Unfamiliarity</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8 text-center">Inherent personality traits significantly influence an individual's predisposition to engage with or withdraw from unfamiliar environments.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">The Big Five Personality Traits</h3>
+                    <p class="mb-6">The Big Five (OCEAN: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) represent stable individual differences. They act as "default settings" influencing how we perceive and react to new environments.</p>
+                    <div class="chart-container h-[350px]">
+                        <canvas id="personalityTraitsChart"></canvas>
+                    </div>
+                    <p class="text-sm text-center mt-4">**High Neuroticism** leads to heightened anxiety and difficulty bouncing back from setbacks in new situations. **Low Openness to Experience** results in a strong preference for familiar routines and resistance to new ideas. **Introversion** (low Extraversion) means social settings are draining, leading to avoidance not out of fear, but to conserve energy. These traits influence our intrinsic comfort and willingness to engage independently.</p>
+                </div>
+
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Novelty Seeking vs. Harm Avoidance</h3>
+                    <p class="mb-6">**Neophilia** (novelty-seeking) is an inherent predisposition to explore new things. This is balanced by **harm avoidance**, the desire to navigate around potential risks. Humans are wired for survival, involving a constant, often unconscious, risk-reward assessment.</p>
+                    <div class="flex flex-col items-center justify-center h-64">
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64">
+                            <h4 class="font-bold">Unfamiliar Situation</h4>
+                            <p class="text-xs">(Potential Reward & Risk)</p>
+                        </div>
+                        <div class="flow-chart-arrow rotate-90 my-2">➔</div>
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64">
+                            <h4 class="font-bold">High Harm Avoidance</h4>
+                            <p class="text-xs">(Brain emphasizes risk)</p>
+                        </div>
+                        <div class="flow-chart-arrow rotate-90 my-2">➔</div>
+                        <div class="flow-chart-item p-4 rounded-lg shadow-md text-center w-64 brand-bg-main text-white">
+                            <h4 class="font-bold">Reluctance to Engage</h4>
+                            <p class="text-xs">(Prioritizes avoiding pain)</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-4">For individuals with high harm avoidance, the brain's "safety mechanism" is hyperactive, leading to an exaggerated emphasis on potential negative outcomes. The anticipated discomfort or social pain of potential failure outweighs the potential pleasure, leading to a strong reluctance to act independently or confidently.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="patterns" class="mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-8 text-center">Common Manifestations: Emotional and Behavioral Patterns</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8 text-center">The struggle with independence and confidence in unfamiliar environments frequently manifests through distinct emotional and behavioral patterns.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Fear of Judgment and Insecurity</h3>
+                    <p class="mb-6">**Fear of Judgment (Fear of Negative Evaluation - FNE)** is a pervasive emotional pattern, often rooted in early experiences where approval was crucial. This leads to a critical inner voice and feelings of inadequacy.</p>
+                    <p class="mb-6">**Insecurity** is a fundamental lack of confidence in one's ability to succeed in social settings, driven by anxiety about potential failure or rejection. It manifests as self-doubt, perfectionism, negative self-talk, and avoidance of self-expression.</p>
+                    <p class="text-sm text-center mt-4">The fear of judgment and insecurity are deeply intertwined. The fear of being socially judged is a common manifestation of social insecurity. This fear can become so intense that it shifts to a primary fear – the fear of *showing* anxiety symptoms (e.g., blushing, trembling) in front of others, which would confirm their perceived inadequacy. This creates a vicious cycle where anticipated judgment fuels insecurity, inhibiting confident action.</p>
+                    <p class="text-sm mt-4 font-semibold brand-text-main">Real-world example:</p>
+                    <p class="text-sm">**Students from rural areas transitioning to city colleges** often face profound culture shock and social adjustment challenges. They may experience a "persistent sense of inferiority" due to perceived differences in social and cultural backgrounds, language barriers, and unfamiliarity with urban norms. This makes them highly vulnerable to fear of judgment and social insecurity, hindering their integration, academic participation (e.g., speaking up in class), and overall adjustment.</p>
+                </div>
+
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Reliance on Familiar People & Avoidance Coping</h3>
+                    <p class="mb-6">The human tendency to gravitate towards familiar people and situations provides comfort and security, rooted in evolutionary psychology and social conditioning. However, over-reliance leads to stagnation, resistance to change, limited perspective, and complacency.</p>
+                    <p class="mb-6">This often manifests in **avoidance coping mechanisms** – actions taken to reduce anxiety in social or unfamiliar situations. While offering short-term relief, they ultimately increase fear in the long run.</p>
+                    <p class="text-sm font-semibold brand-text-main">Forms of Avoidance:</p>
+                    <ul class="list-disc list-inside text-sm ml-4 mb-4">
+                        <li>**Avoidance:** Completely sidestepping feared situations (e.g., dropping a class requiring a speech).</li>
+                        <li>**Escape:** Leaving a feared situation once it has begun (e.g., leaving a party early).</li>
+                        <li>**Partial Avoidance (Safety Behaviors):** Subtle actions to alleviate anxiety when total avoidance isn't possible (e.g., avoiding eye contact, wearing plain clothes).</li>
+                    </ul>
+                    <p class="text-sm text-center">The core issue is that avoidance perpetuates anxiety. Safety behaviors prevent individuals from gathering evidence that could disprove their unhelpful beliefs, creating a paradox where short-term safety prevents long-term confidence building.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="clinical" class="mb-16">
+            <h2 class="text-3xl font-bold brand-text-dark mb-8 text-center">When Patterns Become Labels: Clinical Connections</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-8 text-center">While hesitation is normal, persistent and life-disrupting patterns can be signs of clinical conditions.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="brand-bg-white p-6 rounded-xl shadow-lg lg:col-span-2">
+                    <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Social Anxiety Disorder (SAD) vs. Shyness vs. Dependent Personality Disorder (DPD)</h3>
+                    <p class="mb-6 text-center">It's crucial to distinguish normal shyness from clinical conditions. **Social Anxiety Disorder (SAD)** involves intense, persistent fear of scrutiny in social interactions, leading to significant disruption. **Dependent Personality Disorder (DPD)** is characterized by an excessive need to be taken care of, leading to submissive behavior and fears of separation.</p>
+                    <div class="chart-container mx-auto h-[350px]">
+                        <canvas id="disorderComparisonChart"></canvas>
+                    </div>
+                    <p class="text-sm text-center mt-4">SAD involves severe, distressing physical symptoms (e.g., blushing, trembling) that can become a primary fear. Unlike shyness, SAD is chronic, lasting six months or more. DPD, on the other hand, is marked by difficulty making independent decisions and a pervasive need for reassurance, often stemming from a belief in one's inability to care for themselves.</p>
+                </div>
+            </div>
+
+            <div class="brand-bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold brand-text-dark mb-4 text-center">Other Related Conditions</h3>
+                <p class="text-base">The patterns of fear of judgment, insecurity, reliance on familiar people, and avoidance coping, while central to SAD and DPD, can also be prominent features or contributing factors in other broader anxiety disorders (e.g., **Generalized Anxiety Disorder**) or **depressive disorders**. These patterns can also be symptoms of low self-esteem not necessarily reaching a clinical disorder threshold, but still significantly impacting an individual's quality of life and ability to thrive in new environments.</p>
+            </div>
+        </section>
+
+        <hr class="my-12 brand-border-main">
+
+        <section id="strategies" class="brand-bg-main text-white p-8 rounded-xl shadow-2xl mb-16">
+            <h2 class="text-3xl font-bold text-center mb-6">Your Toolkit for Building Confidence: Strategies for Growth</h2>
+            <p class="text-lg text-center mb-8 opacity-90 max-w-3xl mx-auto">Understanding the psychological roots provides a roadmap for fostering growth and resilience. Strategies often draw from principles of cognitive-behavioral therapy (CBT) and attachment theory.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-5xl mb-2">🏆</div>
+                    <h4 class="text-xl font-semibold mb-1">Seek Mastery Experiences</h4>
+                    <p class="text-sm opacity-90">Set small, achievable goals in unfamiliar settings and gradually increase the challenge. Each successful step, no matter how small, reinforces belief in your capabilities and builds perseverance.</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-2">🤔</div>
+                    <h4 class="text-xl font-semibold mb-1">Challenge Cognitive Distortions</h4>
+                    <p class="text-sm opacity-90">Actively identify and restructure negative thought patterns. Question their evidence, consider alternatives, and replace negative thoughts with more balanced ones. This helps re-evaluate perceived threats.</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-2">🪜</div>
+                    <h4 class="text-xl font-semibold mb-1">Use Gradual Exposure</h4>
+                    <p class="text-sm opacity-90">Systematically and progressively expose yourself to anxiety-inducing situations. Start with minimally provoking situations and gradually move to more challenging ones. This helps you learn anxiety diminishes.</p>
+                </div>
+                 <div>
+                    <div class="text-5xl mb-2">❤️</div>
+                    <h4 class="text-xl font-semibold mb-1">Practice Self-Compassion</h4>
+                    <p class="text-sm opacity-90">Recognize that struggles are often rooted in deep-seated psychological mechanisms, not personal failings. Treat yourself with kindness, view mistakes as learning opportunities, and focus on self-acceptance.</p>
+                </div>
+                 <div>
+                    <div class="text-5xl mb-2">🤝</div>
+                    <h4 class="text-xl font-semibold mb-1">Leverage Vicarious Experiences</h4>
+                    <p class="text-sm opacity-90">Observe others, particularly those similar to you, succeed in challenging situations. Mentorship and peer support groups can provide valuable opportunities for this social modeling.</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-2">⚖️</div>
+                    <h4 class="text-xl font-semibold mb-1">Balance Novelty & Harm Avoidance</h4>
+                    <p class="text-sm opacity-90">Consciously step outside your comfort zone in measured ways. Focus on the rewards of growth and discovery, understanding that discomfort is often temporary and part of the learning process.</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-2">👨‍👩‍👧‍👦</div>
+                    <h4 class="text-xl font-semibold mb-1">Foster Secure Attachment</h4>
+                    <p class="text-sm opacity-90">For caregivers, consistent, responsive care helps children develop emotional health and internal resources to navigate unfamiliarity with confidence. This lays a strong foundation.</p>
+                </div>
+                <div>
+                    <div class="text-5xl mb-2">🧘</div>
+                    <h4 class="text-xl font-semibold mb-1">Mindfulness & Re-framing</h4>
+                    <p class="text-sm opacity-90">Use mindfulness to recognize when you're gravitating to the familiar out of habit. Re-frame physiological signs of anxiety (e.g., butterflies) as excitement, not fear.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-8 mt-12 brand-bg-soft">
+        <p class="text-sm brand-text-main">&copy; 2025 Visual Psychology Insights.</p>
+    </footer>
+ <footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Infographic based on the report "Navigating the Uncharted."</p>
+        <p class="text-sm mt-2">Data synthesized: A Multi-Source psychology Assessment report.</p>
+        <p class="text-sm mt-2"> Created with 💘 by faizan</p>
+        <div class="social-links">
+            <a href="https://github.com/f3r33n" target="_blank" aria-label="My GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 22.179 24 17.636 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/peerzada-faizan-ul-haq" target="_blank" aria-label="My LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.766s.784-1.766 1.75-1.766 1.75.79 1.75 1.766-.783 1.766-1.75 1.766zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
